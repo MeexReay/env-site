@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: AdwaitaMono;
+  src: url(../assets/fonts/AdwaitaMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: AdwaitaMono;
+  src: url(../assets/fonts/AdwaitaMono-Bold.ttf);
+  font-weight: bold;
+}
+
+body {
+  background-color: #1c170f;
+  color: #ffd085;
+  font-family: AdwaitaMono;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 70%;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #ffeac8;
+  background-color: #2f271b;
+  box-shadow: inset 0 0 20px 0 #ffeac857;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
+
+a {
+  color: #ffe4b3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.menu-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.menu-items {
+  display: flex;
+  gap: 15px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+  white-space: break-spaces;
+}
+
+.show-image {
+  float: right;
+  border-radius: 20px;
+  max-width: 20%;
+  transition: all 1s;
+}
+
+.show-image:hover {
+  transform: scale(200%) rotateZ(360deg);
+  box-shadow: 0 0 0 99999px #000a;
+}
